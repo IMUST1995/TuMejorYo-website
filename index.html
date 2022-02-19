@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderHouse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Merienda&display=swap');</style>
+</head>
+<body>
+  <header class="">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">logo</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
+            <ul class="navbar-nav menu">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Salud
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#descansoEncabezado">Descanso y recuperación</a></li>
+                  <li><a class="dropdown-item" href="#alimentacion">Alimentación</a></li>
+                  <li><a class="dropdown-item" href="#entrenamiento">Entrenamiento</a></li>
+                  <li><a class="dropdown-item" href="#mentalidad">Mentalidad</a></li>
+                  <li><a class="dropdown-item" href="#suplementacion">Mentalidad</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/html/tienda.html">Tienda</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="/html/idiomas.html">Idiomas</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+<main id="principal">
+</main>
+<div id="descansoEncabezado" class="d-flex align-items-center">
+  <div class="d-flex justify-content-center align-items-center flex-column p-5">
+    <img class="img-fluid" src="../img/salud/icon-descanso.svg">
+    <h1>Sueño y recuperación</h1>
+    <p>El descanso es el tercer gran pilar de tu salud. Si no duermes bien o se desajustan tus ritmos circadianos será difícil lograr buenos resultados.</p>
+    <p>El sueño es para mí el tercer gran pilar de la salud, junto con el entrenamiento y la alimentación, pero le solemos prestar menos atención.</p></div>
+</div>
+<div id="descansoBody" class="px-5 pt-3 container-fluid d-flex flex-column align-items-center">
+</div>
+<div id="alimentacion"></div>
+  <div class="formContainer container-fluid d-flex align-items-center" id="calculadora">
+    <form action=""class="row col-8 d-flex justify-content-center" id="formCalculator">
+        <h2 class="formTittle text-center">Calculadora de Calorias</h2>
+        <div class="row" id="divFormulario">
+            <div class="col-12 my-3">
+              <input type="number" class="form-control" placeholder="Edad" aria-label="Edad" id="edad">
+            </div>
+            <div class="col-12 my-3">
+              <input type="number" class="form-control" placeholder="Altura en cm" aria-label="Altura" id="altura">
+            </div>
+            
+            <div class="col-12 my-3">
+                <input type="number" class="form-control" placeholder="Peso en kg" aria-label="Peso" id="peso" required>
+            </div>
+            <div class="col-12 my-3">
+                <select class="form-control col-12" name="gender" id="">
+                  <option value="female">Hombre</option>
+                  <option value="male">Mujer</option>
+                </select>
+            </div>
+            <div class="col-6 my-3">
+                <input id="nombre" type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombre">
+            </div>
+            <div class="col-6 my-3">
+                <input id="apellido" type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="apellido">
+            </div>
+            <div class="col-12 my-3">
+                <input id="email" type="email" class="form-control" placeholder="Email" aria-label="Peso" id="email">
+            </div>
+            <button type="button" class="btn btn-danger mt-3 mb-1" id="enviar">Enviar</button>
+        </div>
+      </form>
+  </div>
+<footer id="footer">
+</footer>
+    <!-- <h1>practicando Ajax</h1>
+      <button onclick=mostrarPaises()>Paises</button>
+      <div id="paisesContainer"></div> -->
+    <!-- <script>
+      function mostrarPaises(){
+        //llamamos al objeto con esta pvariable
+        let xhr = new XMLHttpRequest()
+        //open recibe 3 parametros, metodo get la url y si es asicrono o no en boolean
+        xhr.open('GET', 'https://restcountries.com/v2/all', true);
+        // escribimos una funcion a ejecutarse en caso de que sea positivo el acceso a los datos
+        xhr.onload = function(){
+          if(xhr.status == 200){
+            //Transformamos el JSON a javascript
+            let paises = JSON.parse(this.response)
+            paises.forEach(pais => {
+              const paisCard = document.createElement('div');
+              const paisImage = document.createElement('img')
+              paisCard.innerHTML = pais.name
+              paisImage.src = pais.flag
+              paisCard.appendChild(paisImage)
+              document.getElementById('paisesContainer').appendChild(paisCard);
+            });
+          }
+        }
+        xhr.send()
+      };
+    </script> -->
+    <script src="/javascript/script.js"></script>
+    <script src="../javascript/alimentacion.js"></script>
+</body>
+</html>

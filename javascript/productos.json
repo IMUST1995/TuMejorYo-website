@@ -1,0 +1,41 @@
+[{
+"nombre": "Beta Alanine", 
+"marca": "Bulk Suplements", 
+"precio": 27.97, 
+"imagen": "beta.jpg"
+},
+{"nombre":"Whey Bodybuilding Signature", 
+"marca": "Blend Protein (whey concentrate, isolate, and hydrolyzed.)", 
+"precio": 69.99, 
+"imagen": "bodybuilding.signature.jpg"
+},
+{
+"nombre": "Creatina Monohidratada", 
+"marca": "Bulk Suplements", 
+"precio":"30", 
+"imagen": "creatine.jpg"
+}, 
+{
+"nombre": "Melatonina", 
+"marca": "Evolution Nutrition", 
+"precio": 16.99, 
+"imagen": "melatonina.jpg"
+}, 
+{
+"nombre":"Gold Standard", 
+"marca": "Optimun Nutrition", 
+"precio": 59.99, 
+"imagen": "wheygold.jpg"
+}, 
+{
+"nombre": "Whey protein", 
+"marca": "Isopure", 
+"precio": 49.99, 
+"imagen": "isopure.jpg"
+},
+{
+"nombre": "Whey Hidrolizada", 
+"marca": "Optimun Nutrition", 
+"precio": 79.99, 
+"imagen": "hidrowheyON.jpg"
+}]

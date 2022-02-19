@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoderHouse</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/styles.css">
+    <style>@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Merienda&display=swap');</style>
+</head>
+<body class="">
+    <header class="">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light container-fluid">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse flex-row-reverse" id="navbarNavDropdown">
+                <ul class="navbar-nav menu">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Salud
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="../index.html#descansoEncabezado">Descanso y recuperación</a></li>
+                      <li><a class="dropdown-item" href="../index.html#alimentacion">Alimentación</a></li>
+                      <li><a class="dropdown-item" href="../index.html#entrenamiento">Entrenamiento</a></li>
+                      <li><a class="dropdown-item" href="../index.html#mentalidad">Mentalidad</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tienda.html">Tienda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Idiomas</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main class="container-fluid row d-flex justify-content-around" id="tiendaContainer">
+        <h2 class="text-center my-5 tienda">Tienda</h2>
+   <!-- seccion donde se muestran las cards de los productos -->     
+        <div id="tienda" class="row d-flex justify-content-around tienda">
+        </div>
+
+        <div class="container-fluid containerCarrito">
+          <h1>Carrito</h1>
+          <hr>
+          <table>
+            <thead class="titulosTabla">
+              <tr class="row">
+                <div class="container-fluid d-flex justify-content-around text-center row">
+                  <h5 class="col-2">Item</h5>
+                  <h5 class="col-2">Nombre</h5>
+                  <h5 class="col-2">Precio</h5>
+                  <h5 class="col-2">Cantidad</h5>
+                  <h5 class="col-2">Total</h5>
+                </div>
+              </tr>
+              <hr>
+            </thead>
+            <!--CUERPO DEL CARRITO EMPIEXZA AQUI-->
+            <div id="carritoItemsContainer">
+            </div>
+            <!-- total carrito -->
+            <tfoot>
+              <div class="container-fluid d-flex justify-content-evenly">
+                <h4>Total: $<span class='totalCarritoCompra'>0</span></h4>
+                <div>
+                  <button class="btn btn-primary" id="botonComprar">Pagar</button>
+                  <button class="btn btn-danger vaciarCarro">Vaciar</button>
+                </div>
+              </div>
+              <hr>
+            </tfoot>
+          </table>
+        </div>            
+    </main>
+    <footer id="footer">
+    </footer>
+    <script src="/javascript/script.js"></script>
+    <script src="/javascript/tienda.js"></script>
+</body>
+</html>
