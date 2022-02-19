@@ -12,6 +12,7 @@ $(document).ready(function(){
 
     $('#descansoBody').html(`<div class="mb-4 container-fluid" style="width: 33%"><img class="img-fluid imgContenido" id="taburete" src="../img/salud/${imagenes[0].img}"></div><p class="p-3 m-2">La falta de sueño causa multitud de accidentes y lesiones, además elevar el riesgo de casi todas las enfermedades crónicas conocidas. Por si esto fuera poco, dificulta el progreso tanto de la ganancia muscular como de la pérdida de peso.</p>`); 
 
+    
 //animaciones---------------------->
 $('#calculadora').css('opacity', 0.1)
         
