@@ -38,4 +38,3 @@ $(window).scroll(function(){
     })
     
 });
-//lightweight
